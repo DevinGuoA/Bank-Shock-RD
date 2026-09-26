@@ -1,0 +1,29 @@
+\begin{table}[H]
+\centering
+\caption{Summary Statistics}
+\label{tab:q1_summary}
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrrrr@{}}
+\toprule
+Variable & Mean & Median & Min & Max & P25 & P75 & SD & $N$ \\
+\midrule
+Bank assets & 32.125 & 29.220 & 8.265 & 103.301 & 22.303 & 38.725 & 15.027 & 161,704 \\
+Supervised & 0.465 & 0.000 & 0.000 & 1.000 & 0.000 & 1.000 & 0.499 & 161,704 \\
+Bank shock & 0.402 & 0.000 & 0.000 & 1.000 & 0.000 & 1.000 & 0.490 & 161,704 \\
+Pre credit share & 0.254 & 0.186 & 0.000 & 1.000 & 0.078 & 0.363 & 0.229 & 161,704 \\
+Firm credit quality & -0.002 & 0.006 & -4.488 & 4.570 & -0.673 & 0.672 & 1.000 & 161,704 \\
+Loan growth & -0.061 & -0.059 & -0.703 & 0.559 & -0.166 & 0.045 & 0.155 & 161,704 \\
+Firm credit growth & -0.016 & -0.016 & -0.342 & 0.292 & -0.065 & 0.033 & 0.073 & 161,704 \\
+Investment growth & -0.005 & -0.004 & -0.356 & 0.352 & -0.060 & 0.051 & 0.081 & 161,704 \\
+Shock exposure & 0.400 & 0.353 & 0.000 & 1.000 & 0.053 & 0.680 & 0.342 & 41,000 \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} Source variables weight loans equally, so firm and bank characteristics repeat across loans. Exposure counts each firm once. Nonmissing IDs identify 161,704 unique loans, 41,000 firms, and 320 banks. $Exposure_f=\sum_b\widetilde w_{fb}Shock_b$, with $\widetilde w_{fb}=w_{fb}/\sum_jw_{fj}$, where $w_{fb}$ is the firm's preperiod borrowing share from bank $b$ and $Shock_b$ indicates a funding shock. Normalized shares sum to one within firm. SD is the sample standard deviation. P25 and P75 use linear interpolation. No observations are trimmed.
+\end{minipage}
+\endgroup
+\end{table}

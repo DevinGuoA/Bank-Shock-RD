@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\caption{Funding Shocks and Loan Growth}
+\label{tab:q3_loan_regressions}
+\small
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+ & Pooled & Pooled & Pooled & Firm FE \\
+Sample & All & Multiple banks & All & Multiple banks \\
+\midrule
+Bank shock & -0.148$^{***}$ & -0.148$^{***}$ & -0.098$^{***}$ & -0.099$^{***}$ \\
+ & (0.002) & (0.002) & (0.002) & (0.002) \\
+Credit quality &  &  & 0.100$^{***}$ &  \\
+ &  &  & ($<0.001$) &  \\
+Constant & -0.001 & -0.001 & -0.021$^{***}$ &  \\
+ & (0.001) & (0.001) & (0.001) &  \\
+\midrule
+Loans & 161,704 & 159,530 & 161,704 & 159,530 \\
+Firms & 41,000 & 38,826 & 41,000 & 38,826 \\
+Banks & 320 & 320 & 320 & 320 \\
+Firm fixed effects & No & No & No & Yes \\
+$R^2$ & 0.220 & 0.220 & 0.613 & 0.194 \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+\textit{Notes:} Specifications are $Y_{fb}=\alpha+\beta Shock_b+\varepsilon_{fb}$ in columns (1) and (2), with $\gamma Quality_f$ added in (3), and $Y_{fb}=\alpha_f+\beta Shock_b+\varepsilon_{fb}$ in (4). The dependent variable is the change in log lending. Multiple banks means at least two banks per firm. Credit quality is absorbed by firm effects. Parentheses report standard errors clustered by bank and firm. Each cluster component uses its cluster count correction and $(N-1)/(N-K)$, including absorbed firm effects in $K$. Tests use 319 degrees of freedom. The last $R^2$ is within firm. Positive standard errors below 0.001 are shown as $<0.001$; saved numerical results retain full precision. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

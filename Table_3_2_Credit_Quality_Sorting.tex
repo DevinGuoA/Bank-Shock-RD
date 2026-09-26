@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Borrower Credit Quality by Bank Shock Status}
+\label{tab:q3_quality_sorting}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+\toprule
+ & No shock & Shock & Difference & Std. error & $p$ value \\
+\midrule
+Credit quality & 0.198 & -0.300 & -0.498 & 0.006 & $<0.001$ \\
+Loans & 96,727 & 64,977 & & & \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+\textit{Notes:} Means weight each observed loan equally, matching the pooled regression sample. Difference is Shock minus No shock. The standard error is clustered by bank and firm in a regression of credit quality on the shock indicator and a constant. The two sided test uses 319 degrees of freedom. A firm borrowing from both bank types can enter both means.
+\end{minipage}
+\end{table}

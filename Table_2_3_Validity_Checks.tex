@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Limited Balance and Density Diagnostics}
+\label{tab:q2_validity}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrr}
+\toprule
+Diagnostic & Jump & Std. error & $p$ value \\
+\midrule
+\multicolumn{4}{l}{\textit{Panel A. Available bank and borrower proxies}} \\
+Bank funding shock & 16.938 & 21.602 & 0.435 \\
+Mean borrower credit quality & -0.073 & 0.109 & 0.506 \\
+Number of loan relationships & -16.227 & 10.138 & 0.113 \\
+\midrule
+\multicolumn{4}{l}{\textit{Panel B. Bank asset density}} \\
+Density at the cutoff & 0.008 & 0.017 & 0.659 \\
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} Panel A uses the local linear specification in Table~\ref{tab:q2_windows} within assets $[25,35]$, with HC3 standard errors and $t$ tests. The shock jump is in percentage points, credit quality is in index units, and relationships are counts. These variables are not verified pre supervision covariates: shock timing relative to supervision is unspecified, and borrower composition may respond to supervision. Panel B uses the robust \texttt{rddensity} test with local polynomial orders $p=2$, $q=3$, a triangular kernel, automatic \texttt{comb} bandwidths, and jackknife variance estimation. The density jump is measured per asset unit. All jumps are right minus left. Individual $p$ values are unadjusted. Nonrejection does not establish RD validity.
+\end{minipage}
+\end{table}

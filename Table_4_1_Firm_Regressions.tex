@@ -1,0 +1,29 @@
+\begin{table}[H]
+\centering
+\caption{Shock Exposure, Total Credit, and Investment}
+\label{tab:q4_firm_regressions}
+\small
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+ & \multicolumn{2}{c}{Total credit growth} & \multicolumn{2}{c}{Investment growth} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & (1) & (2) & (3) & (4) \\
+\midrule
+Shock exposure & -0.102$^{***}$ & -0.040$^{***}$ & -0.082$^{***}$ & -0.012$^{***}$ \\
+ & ($<0.001$) & ($<0.001$) & (0.001) & ($<0.001$) \\
+Credit quality &  & 0.060$^{***}$ &  & 0.069$^{***}$ \\
+ &  & ($<0.001$) &  & ($<0.001$) \\
+Constant & 0.024$^{***}$ & 0.000 & 0.028$^{***}$ & 0.000 \\
+ & ($<0.001$) & ($<0.001$) & ($<0.001$) & ($<0.001$) \\
+\midrule
+Firms & 41,000 & 41,000 & 41,000 & 41,000 \\
+Credit quality control & No & Yes & No & Yes \\
+$R^2$ & 0.226 & 0.821 & 0.121 & 0.745 \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+\textit{Notes:} Specifications are $Y_f=\alpha+\beta Exposure_f+u_f$ in columns (1) and (3), with $\gamma Quality_f$ added in (2) and (4). Outcomes are total credit growth in (1) and (2) and investment growth in (3) and (4). Exposure is the preperiod borrowing share supplied by shocked banks, with weights normalized within firm to sum to one. Firms are equally weighted. Parentheses report HC3 heteroskedasticity robust standard errors; $t$ tests use $N-K$ degrees of freedom. Inference assumes independence across firms. Positive standard errors below 0.001 are displayed as $<0.001$. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

@@ -1,0 +1,25 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Automatic Bandwidth Selection and Robust RD Inference}
+\label{tab:q2_robust}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc}
+\toprule
+ & Conventional & Robust bias corrected \\
+\midrule
+RD estimate & $-0.057^{**}$ & $-0.062^{**}$ \\
+Standard error & 0.026 & 0.030 \\
+$p$ value & 0.025 & 0.041 \\
+95\% confidence interval & $[-0.108,\ -0.007]$ & $[-0.122,\ -0.002]$ \\
+\midrule
+ & Below cutoff & Above cutoff \\
+Estimation bandwidth $h$ & 9.776 & 9.776 \\
+Bias bandwidth $b$ & 15.087 & 15.087 \\
+Banks within $h$ & 107 & 74 \\
+Banks within $b$ & 153 & 97 \\
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} The estimand is the jump in bank mean log loan growth at assets of 30. Estimates and standard errors use the source log units. The \texttt{rdrobust} specification uses separate local linear fits ($p=1$), local quadratic bias estimation ($q=2$), a triangular kernel, the common MSE optimal bandwidth selector \texttt{mserd}, and nearest neighbor variance estimation with three neighbors. The right column reports the bias corrected estimate with its robust standard error and normal based confidence interval. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

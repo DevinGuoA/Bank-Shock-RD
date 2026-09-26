@@ -1,0 +1,24 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Local Linear Effects of Bank Supervision}
+\label{tab:q2_windows}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccc}
+\toprule
+ & (1) & (2) & (3) \\
+Asset window & $[27,33]$ & $[25,35]$ & $[22,38]$ \\
+\midrule
+Supervised & $-0.041^{}$ & $-0.072^{**}$ & $-0.048^{*}$ \\
+ & (0.043) & (0.032) & (0.025) \\
+$t$ statistic & -0.959 & -2.239 & -1.889 \\
+$p$ value & 0.342 & 0.027 & 0.061 \\
+\midrule
+Banks below cutoff & 31 & 54 & 94 \\
+Banks above cutoff & 23 & 45 & 64 \\
+Separate asset slopes & Yes & Yes & Yes \\
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} Specification: $\overline{Y}_b=\alpha+\tau S_b+\beta x_b+\gamma S_bx_b+u_b$, where $x_b=\mathrm{Assets}_b-30$ and $S_b=1\{\mathrm{Assets}_b\geq30\}$. The dependent variable is the bank mean change in log lending, kept in source units. Each bank has equal weight within the stated window, equivalent to a uniform kernel. HC3 standard errors are in parentheses. Tests and confidence intervals use a $t$ distribution with $N-4$ degrees of freedom. These manual estimates do not apply bias correction. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}
