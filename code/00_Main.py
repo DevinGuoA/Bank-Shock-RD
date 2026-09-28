@@ -1,4 +1,4 @@
-"""Run the analyses without building the report or documentation."""
+"""Run the analyses"""
 
 from pathlib import Path
 import subprocess
